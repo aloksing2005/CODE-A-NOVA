@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe Finder Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>🍲 Recipe Finder Pro</h1>
+<div class="controls">
+  <input type="text" id="search" placeholder="Search recipe...">
+  <select id="category" onchange="filterCategory()">
+    <option value="">All</option>
+    <option value="Vegetarian">Vegetarian</option>
+    <option value="Dessert">Dessert</option>
+    <option value="Seafood">Seafood</option>
+  </select>
+  <button onclick="searchRecipes()">Search</button>
+</div>
+<h2>Recipes</h2>
+<div id="recipes"></div>
+<h2>❤️ Favorites</h2>
+<div id="favorites"></div>
+<!-- Modal -->
+<div id="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h2 id="title"></h2>
+    <img id="image">
+    <ul id="ingredients"></ul>
+    <p id="instructions"></p>
+    <a id="video" target="_blank">▶ Watch Video</a>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
